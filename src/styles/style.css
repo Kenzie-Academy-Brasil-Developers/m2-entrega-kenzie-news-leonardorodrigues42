@@ -1,0 +1,174 @@
+html {
+    margin: 0px;
+    width: 100%;
+}
+
+body {
+    margin: 0px;
+    font-family: Roboto;
+    background: #F9F9F9;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    background: rgba(81, 99, 211, 1);
+}
+
+.container {
+    background: #FFFFFF;
+    justify-content: space-between;
+    width: 980px;
+    max-width: 100%;
+    height: 360px;
+    display: flex;
+    border: 1px solid #EEEEEE;
+    box-shadow: 3px 3px 5px rgba(27, 28, 30, 0.1);
+    border-radius: 4px;
+    margin: 0 auto;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    background-image:url(../img/Logo.png);
+}
+
+.container figure {
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+    width: 357px;
+    border-radius: 0px 4px 4px 0px;
+}
+
+.container .infos {
+    padding: 30px 0 30px 20px;
+    width: 623px;
+}
+
+.container .titulo {
+    font-size: 36px;
+}
+
+.container .resumo {
+    font-size: 14px;
+}
+
+main {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1450px;
+}
+
+.ulNews {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 121px;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.noticia {
+    background: #FFFFFF;
+    display: flex;
+    list-style: none;
+    width: 569px;
+    height: 180px;  
+    border-radius: 4px;
+    border: 1px solid #EEEEEE;
+    box-shadow: 3px 3px 5px rgba(27, 28, 30, 0.1);
+}
+
+figure {
+    width: 180px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.noticia img {
+    border-radius: 4px 0 0 4px;
+    overflow: hidden;
+}
+
+.infos {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    gap: 8px;
+    justify-content: space-between;
+}
+
+.categoria {
+    width: fit-content;
+    background: rgba(215, 228, 251, 1);
+    padding: 3px;
+    border-radius: 4px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    color: #5163D3;
+}
+
+.titulo {
+    font-family: Roboto Slab;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 110%;
+    color: rgba(81, 99, 211, 1);
+    overflow: hidden;
+}
+
+.resumo {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 14px;
+    overflow: hidden;
+}
+
+footer {
+    display: flex;
+    margin-top: 50px;
+    background: rgba(238, 238, 238, 1);
+    height: 48px;
+    justify-content: center;
+    align-items: center;
+    font-weight: 300;
+}
+
+@media(max-width: 1433px) {
+    .ulNews {
+        justify-content: center;
+        margin: 20px;
+    }
+}
+
+@media (max-width: 602px) {
+    .containerNews figure, .containerNews img {
+        display: none;
+    }
+    
+    .container {
+        border-radius: 0px;
+        box-shadow: none;
+        background-image: none;
+        color: #fff;
+        background: url(image.png);
+        opacity: 0.75;
+        backdrop-filter: blur(4px);
+    }
+
+    .container .infos {
+        justify-content: flex-end;
+    }
+
+    .container figure{
+       display: none;
+    }
+}
